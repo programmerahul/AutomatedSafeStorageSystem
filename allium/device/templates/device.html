@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Page</title>
+<!--    <link rel="stylesheet" href="device.css">-->
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'device.css' %}">
+
+</head>
+
+<body>
+    <nav id="navs">
+        <div class="navTop">
+            <a href="/">
+                <button class="button-30">HOME</button>
+            </a>
+          <h1 class="onion"> E-SMART STORAGE</h1>
+            <a href="/admin">
+                <button class="button-30" role="button">ADMIN</button>
+            </a>
+        </div>
+    </nav>
+    
+        <div class="main2">
+            <div class="device">
+                
+                     <!-- Replace with the path to your image <img src="0green-nature-beautiful-wallpaper.jpg" alt="Your Image Description"> -->
+                
+                    <div class="project-box">
+                        <h1 class="device">DEVICE INFO</h1>
+                         <div class="project-box2">
+                              <h2 class="text">Name : {{device.name}}</h2>
+                              <h2 class="text">Temperature(in C) : {{device.temperature}}</h2>
+                              <h2 class="text">Humidity :{{device.humidity}}</h2>
+                              <h2 class="text">Toxic Gases : {{device.toxicGases}}</h2>
+                               <h2 class="text">Status : {{device.status}}</h2>
+                              <h2 class="text">EventTime : {{device.eventTime}}</h2>
+                         </div>
+                    </div>      
+            </div>
+            
+        </div>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-top">
+                   
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <p>Contact Us:</p>
+                        <p>Email: raspberrypiallium@gmail.com</p>
+                        <p>Phone: +91 9898444425</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Suman Raj. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+<!--    <link rel="stylesheet" href="home.css">-->
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+
+<body>
+    <nav id="navs">
+        <div class="navTop">
+          <h1 class="home">HOME</h1>
+          <h1 class="home">E-SMART STORAGE</h1>
+            <a href="/admin">
+                <button class="button-30" role="button">ADMIN</button>
+            </a>
+        </div>
+    </nav>
+    
+        <div class="main2">
+  
+            <div class="device">
+
+                     <!-- Replace with the path to your image <img src="0green-nature-beautiful-wallpaper.jpg" alt="Your Image Description"> -->
+                    <div class="project-box">
+                
+
+                        <h1 class="description">About Project</h1>
+                        
+                        <h3 class="texts">This is a brief description of the project. It highlights the key features and objectives of the project. our project is a testament to the symbiosis of hardware and software in addressing contemporary challenges in agriculture. By leveraging the capabilities of modern technology, we aspire to contribute to the enhancement of post-harvest practices, ensuring a sustainable and efficient supply chain for this fundamental agricultural commodity—onions.<br>
+                            Our project unfolds in two pivotal layers: the hardware setup and the software architecture. On the hardware front, the sensors act as sensory organs, collecting real-time data on temperature, humidity, and gas concentrations. Meanwhile, the Raspberry Pi 4 serves as the brain, orchestrating data collection, processing, and transmission. The software architecture extends this functionality into a cohesive system, integrating a backend equipped with a robust database.
+                          </h3>
+                    </div>      
+            </div>
+           
+        </div>
+        <div class="main">
+            <div class="device2">
+                
+            
+                <button class="button-50" role="button">DEVICE 1 <br> <a href="/device">CLICK HERE</a> </button>
+                <button class="button-50" role="button">DEVICE 2<br> CLICK HERE</button>
+                <button class="button-50" role="button">DEVICE 3<br> CLICK HERE</button>
+                <button class="button-50" role="button">DEVICE 4<br> CLICK HERE</button>
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-top">
+                    
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <p>Contact Us:</p>
+                        <p>Email: raspberrypiallium@gmail.com</p>
+                        <p>Phone: +91 9898444425</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 SUMAN RAJ. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
